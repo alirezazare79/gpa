@@ -1,13 +1,40 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import javax.persistence.*;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction tx = em.getTransaction();
+        tx.begin();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code
+        Banque banque = new Banque();
+        banque.setNom("Banque Exemple");
+        em.persist(banque);
+
+        Adresse adresse = new Adresse();
+        adresse.setNumero(123);
+        adresse.setRue("Rue Exemple");
+        adresse.setCodePostal(75000);
+        adresse.setVille("Ville Exemple");
+
+        Compte compte1 = new Compte(); // Replace with a specific type if needed
+        compte1.setSolde(1000); // example balance
+        em.persist(compte1);
+
+        Client client1 = new Client();
+        client1.setNom("NomClient1");
+        client1.setPrenom("PrenomClient1");
+        em.persist(client1);
+
+        Client client2 = new Client();
+        client2.setNom("NomClient2");
+        client2.setPrenom("PrenomClient2");
+        em.persist(client2);
+
+        tx.commit();
+        em.close();
+        emf.close();
     }
 }

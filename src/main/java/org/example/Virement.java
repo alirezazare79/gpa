@@ -1,14 +1,24 @@
 package org.example;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import org.example.Operation;
+
+import javax.persistence.*;
 
 @Entity
-public class Virement {
+public class Virement extends Operation {
 
+    @Column(name = "beneficiaire")
+    private String beneficiaire;
     @Id
     private Long id;
+
+    public String getBeneficiaire() {
+        return beneficiaire;
+    }
+
+    public void setBeneficiaire(String beneficiaire) {
+        this.beneficiaire = beneficiaire;
+    }
 
     public void setId(Long id) {
         this.id = id;
