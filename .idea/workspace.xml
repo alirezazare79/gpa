@@ -6,8 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="79c15264-a8f8-436b-91ed-a547bc776dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Adresse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssuranceVie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssuranceVie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Banque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Banque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LivretA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LivretA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Virement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Virement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702906396414</updated>
       <workItem from="1702906397469" duration="7187000" />
-      <workItem from="1702995323113" duration="791000" />
+      <workItem from="1702995323113" duration="5103000" />
     </task>
     <servers />
   </component>

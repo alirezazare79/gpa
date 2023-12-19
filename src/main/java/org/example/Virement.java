@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.Operation;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Virement extends Operation {

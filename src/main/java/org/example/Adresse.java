@@ -1,10 +1,9 @@
 package org.example;
-import javax.persistence.*;
+import jakarta.persistence.*;
+
+@Embeddable
 public class Adresse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     @Column(name = "numero")
     private int numero;
@@ -18,26 +17,13 @@ public class Adresse {
     @Column(name = "ville")
     private String ville;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "client_id")
-    private Client client;
 
-    public Client getClient() {
-        return client;
-    }
 
-    public void setClient(Client client) {
-        this.client = client;
-    }
 
     // Standard getters and setters
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+
+
 
     public int getNumero() {
         return numero;

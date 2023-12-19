@@ -1,6 +1,5 @@
 package org.example;
-import javax.persistence.*;
-import java.io.Serializable;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class Banque {
     @Column(name = "nom")
     private String nom;
 
-    @OneToMany(mappedBy = "Banque", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "banque", cascade = CascadeType.ALL)
     private List<Client> clients = new ArrayList<>();
 
     public Long getId() {

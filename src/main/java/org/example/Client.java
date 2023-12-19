@@ -1,6 +1,6 @@
 package org.example;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -69,8 +69,7 @@ public class Client {
     @JoinColumn(name = "banque_id")
     private Banque banque;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "adresse_id", referencedColumnName = "id")
+    @Embedded
     private Adresse adresse;
 
     // Standard getters and setters for banque and adresse
@@ -86,12 +85,7 @@ public class Client {
         return adresse;
     }
 
-    public void setAdresse(Adresse adresse) {
-        this.adresse = adresse;
-        if (adresse != null) {
-            adresse.setClient(this);
-        }
-    }
+
 
 
 }
