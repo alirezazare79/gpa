@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +33,21 @@ public class Main {
         client2.setNom("NomClient2");
         client2.setPrenom("PrenomClient2");
         em.persist(client2);
+
+        // Insert Operations of Type 'Virements' on an Account
+        Virement virement1 = new Virement();
+        virement1.setMontant(100);
+        virement1.setDate(LocalDateTime.now());
+        virement1.setCompte(compte1); // associating to compte1
+        em.persist(virement1);
+
+        // Insert Operations of Type 'Operations' on an Account
+        Operation operation1 = new Operation();
+        operation1.setMontant(50);
+        operation1.setDate(LocalDateTime.now());
+        operation1.setCompte(compte1);
+        em.persist(operation1);
+
 
         tx.commit();
         em.close();
